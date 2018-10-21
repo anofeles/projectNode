@@ -1,1 +1,9 @@
 node_modules
+.idea/codeStyles/
+.idea/fileTemplates/
+.idea/inspectionProfiles/
+.idea/workspace.xml
+nodejs_dasawyisi.patch
+.idea/encodings.xml
+/.env
+

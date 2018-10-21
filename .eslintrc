@@ -1,13 +1,18 @@
 {
-  "plugins": ["node"],
-  "extends": ["eslint:recommended", "plugin:node/recommended","prettier"],
-  "rules": {
-    "node/exports-style": ["error", "module.exports"],
-    "node/prefer-global/buffer": ["error", "always"],
-    "node/prefer-global/console": ["error", "always"],
-    "node/prefer-global/process": ["error", "always"],
-    "node/prefer-global/url-search-params": ["error", "always"],
-    "node/prefer-global/url": ["error", "always"],
-    "no-console": "off"
+  "extends": [
+    "standard",
+    "standard-react"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "browser": true
   }
 }
